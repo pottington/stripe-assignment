@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Complete your fruit purchase</title>
+    <meta name="description" content="A demo of a card payment on Stripe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="global.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="client.js" defer></script>
+  </head>
+
+  <body>
+    
+    <!-- Display a payment form -->
+    <form id="payment-form">
+      <img src="img/logo.png" id="logo">
+      
+      <p id="cart-total">Cart total: {{ total }}</p>
+
+      <div id="card-element"><!--Stripe.js injects the Card Element--></div>
+      
+      <button id="submit">
+        <div class="spinner hidden" id="spinner"></div>
+        <span id="button-text">Pay</span>
+      </button>
+      
+      <p id="card-errors" role="alert"></p>
+      
+      <p class="result-message hidden">
+        Payment succeeded. 
+        <a href="http://localhost:4242">Start again.</a>
+      </p>
+      
+      <!-- Hidden field for hte clientSecret that came back when creating the PaymentIntent -->
+      <input type="hidden" value="{{ clientSecret }}" id="client-secret">
+    </form>
+  </body>
+</html>
