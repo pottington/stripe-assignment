@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Animal Crossing Fruit Store</title>
+    <meta name="description" content="Animal Crossing Fruit Store" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="global.css" />
+  </head>
+
+  <body>
+    
+    <form action="checkout" method="POST">
+      <img src="img/logo.png" id="logo">
+      
+      <ul id="fruit-list">
+        <li class="fruit">
+          <img src="img/apple.png" class="fruit-icon" />
+          <div class="order-qty">
+            <label for="apple-qty">Apples</label>
+            <input type="number" name="apples" id="apple-qty" class="qty-field" min="0" max="10" step="1" value="1">
+          </div>
+        </li>
+
+        <li class="fruit">
+          <img src="img/orange.png" class="fruit-icon" />
+          <div class="order-qty">
+            <label for="orange-qty">Oranges</label>
+            <input type="number" name="oranges" id="orange-qty" class="qty-field" min="0" max="10" step="1" value="0">
+          </div>
+        </li>
+
+        <li class="fruit">
+          <img src="img/peach.png" class="fruit-icon" />
+          <div class="order-qty">
+            <label for="peach-qty">Peaches</label>
+            <input type="number" name="peaches" id="peach-qty" class="qty-field" min="0" max="10" step="1" value="0">
+          </div>
+        </li>
+
+        <li class="fruit">
+          <img src="img/cherry.png" class="fruit-icon" />
+          <div class="order-qty">
+            <label for="cherry-qty">Cherries</label>
+            <input type="number" name="cherries" id="cherry-qty" class="qty-field" min="0" max="10" step="1" value="0">
+          </div>
+        </li>
+
+        <li class="fruit">
+          <img src="img/pear.png" class="fruit-icon" />
+          <div class="order-qty">
+            <label for="pear-qty">Pears</label>
+            <input type="number" name="pears" id="pear-qty" class="qty-field" min="0" max="10" step="1" value="0">
+          </div>
+        </li>
+
+      </ul>
+      <input type="submit" value="Buy!" id="buy-button">
+    </form>
+
+
+  </body>
+</html>
