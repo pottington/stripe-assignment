@@ -1,5 +1,5 @@
 
-# Alistair Pott – PaymentIntents assignment
+# PaymentIntents assignment
 
 This package contains the output of this exercise. I created a simple theoretical store inspired by the game Animal Crossing. I integrated PaymentIntents into that store.
 
